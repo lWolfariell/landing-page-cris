@@ -1,0 +1,50 @@
+@mixin font-geral {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    color: map-get($colors, textos-Gerais);
+    font-size: 1rem;
+}
+
+@mixin font-title($tamanho-fonte) {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    color: map-get($colors, textos-Gerais);
+    font-size: $tamanho-fonte;
+}
+
+@mixin span {
+    color: map-get($colors, secundaria_Roxo);
+    font-size: 15px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    letter-spacing: 0.6px;
+    word-spacing: 2px;
+    font-weight: 700;
+    text-decoration: rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: small-caps;
+    text-shadow: 3px 2px 3px rgba(83, 83, 83, 0.147)
+}
+
+@mixin button {
+    font-family: Bebas Neue;
+    font-weight: 700;
+    letter-spacing:1px;
+    font-size: 15px;
+    color: #ffffff;
+    background: linear-gradient(147deg, #25cc00 0%, #2c8503 100%);
+    padding: 10px 15px;
+    border: solid #325731 2px;
+    box-shadow: rgb(0, 0, 0) 5px 5px 4px -3px;
+    border-radius: 18px;
+    transition: 500ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 230px;    
+    text-shadow: 3px 2px 3px rgba(83, 83, 83, 0.347)
+}
+
+
