@@ -1,3 +1,6 @@
+@import 'functions';
+@import 'vars';
+
 .top-pag {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -9,22 +12,24 @@
 
     .title-logo {
         grid-area: 1 / 1 / 3 / 2;
-        background-color: $colors[rosa_Pastel_Primario];
-        
+        background-color: map-get($colors, rosa_Pastel_Primario); 
+        @include font-title(30px)     
     }
 
     .contato-container {
         grid-area: 1 / 2 / 3 / 3;
         //grid-area: 1 / 2 / 2 / 3; usar esse valor quando tiver numa tela maior
-        background-color: $colors[secundaria_roxo];
+        background-color: map-get($colors, secundaria_Roxo);
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
         padding: 10px 10px 5px 30px;
+        @include font-geral;
     }
 
     .menu-nav {
         //grid-area: 2 / 2 / 3 / 3; usar esse valor quando tiver numa tela maior
         display: none;
     }
+    
 }
