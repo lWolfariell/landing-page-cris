@@ -20,13 +20,13 @@
         }
 
         .titles {
-            @include font-title (40px);
+            @include font-title;
             text-align: center;
             margin-bottom: 15px
         }
 
         .texts {
-            @include font-title(15px)
+            @include font-title
         }
 
 
@@ -54,7 +54,7 @@ button {
     padding: 1rem;
 
     .titles-beneficios {
-        @include font-title(1.5rem);
+        @include font-title;
         text-align: center;
         border-bottom: 2px double;
         margin-bottom: 10px;
@@ -83,7 +83,7 @@ button {
     }
 
     strong {
-        @include font-title(1rem)
+        @include font-title
     }
 
     span {
@@ -107,7 +107,7 @@ button {
             margin: 20px; // Espaçamento ao redor do cartão
             display: flex;
             flex-direction: column;
-            border: 1px solid;
+            border: 1px solid map-get($colors, secundaria_Roxo);
             align-items: center;
             gap: 1rem;
         }
@@ -125,6 +125,7 @@ button {
             position: relative;
             width: 100%; // Garante que a imagem preencha todo o contêiner
             height: 200px; // Defina a altura desejada para o contêiner da imagem
+            margin-bottom: 33px;
         }
 
         .imgPack {
@@ -133,7 +134,97 @@ button {
             object-fit: cover; // Faz com que a imagem preencha o contêiner sem distorção
         }
 
+        .circle-valor {
+            background-color: map-get($colors , rosa_Pastel_Terciario);
+            border: 2px solid map-get($colors, secundaria_Roxo);
+            border-radius: 50px;
+            position: absolute;
+            text-align: center;
+            padding: 18px;
+            width: 34px;
+            top: 100%;
+            /* Posiciona o círculo verticalmente no meio */
+            left: 38%;
+            transform: translateY(-50%);
+            /* Corrige o deslocamento vertical */
+
+        }
+
+        .list-pack {
+
+            li {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .whatsApp.Pack {
+            margin-bottom: 30px;
+        }
+
         // Restante do seu CSS para o detalhamento do pacote (título, imagem, lista, botão) dentro do cartão
     }
 
+}
+
+.material-symbols-outlined {
+    color: #9287b9;
+    margin-right: 5px;
+}
+
+.sobre {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    .sobre-cris {
+        @include span;
+    }
+
+    .borda-imagem {
+        width: 200px;
+        /* Largura do contêiner */
+        height: 200px;
+        /* Altura do contêiner */
+        border-radius: 50%;
+        /* Transforma o contêiner em um círculo */
+        overflow: hidden;
+        /* Oculta qualquer parte da imagem que ultrapasse os limites do contêiner */
+
+        img {
+            width: 100%;/* Garante que a imagem preencha todo o contêiner */
+            height: 100%;/* Garante que a imagem preencha todo o contêiner */
+            object-fit: cover;/* Faz com que a imagem preencha o contêiner sem distorção */
+
+        }
+    }
+
+    .frase-intro {
+        @include font-title;
+    }
+
+    .resume {
+        @include font-geral;
+        font-size: 1rem;
+        text-indent: 50px;
+        line-height: 1.5em;
+    }
+
+    .list-pontos-fortes {
+        li {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.rodape{
+    background-color: #ad0a85;
+
+    .information {
+        background-color: rgba(#9ab0da, 0.5);
+    }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .top-pag {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -10,9 +11,7 @@
   grid-area: 1/1/3/2;
   background-color: #E7C3BA;
   font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 600;
   color: #3b302d;
-  font-size: 30px;
 }
 .top-pag .contato-container {
   grid-area: 1/2/3/3;
@@ -61,17 +60,13 @@
 }
 .chamada .background .titles {
   font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 600;
   color: #3b302d;
-  font-size: 40px;
   text-align: center;
   margin-bottom: 15px;
 }
 .chamada .background .texts {
   font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 600;
   color: #3b302d;
-  font-size: 15px;
 }
 
 button {
@@ -111,9 +106,7 @@ button:hover {
 }
 .beneficios .titles-beneficios {
   font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 600;
   color: #3b302d;
-  font-size: 1.5rem;
   text-align: center;
   border-bottom: 2px double;
   margin-bottom: 10px;
@@ -138,9 +131,7 @@ button:hover {
 }
 .beneficios strong {
   font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 600;
   color: #3b302d;
-  font-size: 1rem;
 }
 .beneficios span {
   font-family: "IBM Plex Sans", sans-serif;
@@ -161,7 +152,7 @@ button:hover {
   margin: 20px;
   display: flex;
   flex-direction: column;
-  border: 1px solid;
+  border: 1px solid #BDB2E3;
   align-items: center;
   gap: 1rem;
 }
@@ -177,10 +168,120 @@ button:hover {
   position: relative;
   width: 100%;
   height: 200px;
+  margin-bottom: 33px;
 }
 .apresentacao-pack-promocional .detalhes-pack .imgPack {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.apresentacao-pack-promocional .detalhes-pack .circle-valor {
+  background-color: #EFD3CB;
+  border: 2px solid #BDB2E3;
+  border-radius: 50px;
+  position: absolute;
+  text-align: center;
+  padding: 18px;
+  width: 34px;
+  top: 100%;
+  /* Posiciona o círculo verticalmente no meio */
+  left: 38%;
+  transform: translateY(-50%);
+  /* Corrige o deslocamento vertical */
+}
+.apresentacao-pack-promocional .detalhes-pack .list-pack li {
+  display: flex;
+  align-items: center;
+}
+.apresentacao-pack-promocional .detalhes-pack .whatsApp.Pack {
+  margin-bottom: 30px;
+}
+
+.material-symbols-outlined {
+  color: #9287b9;
+  margin-right: 5px;
+}
+
+.sobre {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.sobre .sobre-cris {
+  color: #BDB2E3;
+  font-size: 15px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  letter-spacing: 0.6px;
+  word-spacing: 2px;
+  font-weight: 700;
+  -webkit-text-decoration: rgb(68, 68, 68);
+          text-decoration: rgb(68, 68, 68);
+  font-style: italic;
+  font-variant: small-caps;
+  text-shadow: 3px 2px 3px rgba(83, 83, 83, 0.147);
+}
+.sobre .borda-imagem {
+  width: 200px;
+  /* Largura do contêiner */
+  height: 200px;
+  /* Altura do contêiner */
+  border-radius: 50%;
+  /* Transforma o contêiner em um círculo */
+  overflow: hidden;
+  /* Oculta qualquer parte da imagem que ultrapasse os limites do contêiner */
+}
+.sobre .borda-imagem img {
+  width: 100%; /* Garante que a imagem preencha todo o contêiner */
+  height: 100%; /* Garante que a imagem preencha todo o contêiner */
+  -o-object-fit: cover;
+     object-fit: cover; /* Faz com que a imagem preencha o contêiner sem distorção */
+}
+.sobre .frase-intro {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #3b302d;
+}
+.sobre .resume {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  color: #3b302d;
+  font-size: 1rem;
+  font-size: 1rem;
+  text-indent: 50px;
+  line-height: 1.5em;
+}
+.sobre .list-pontos-fortes li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.rodape {
+  background-color: #ad0a85;
+}
+.rodape .information {
+  background-color: rgba(154, 176, 218, 0.5);
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 33px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: 400;
+}
+
+strong {
+  font-size: 20px;
+  font-weight: 400;
 }/*# sourceMappingURL=index.css.map */

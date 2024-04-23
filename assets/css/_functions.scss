@@ -5,11 +5,9 @@
     font-size: 1rem;
 }
 
-@mixin font-title($tamanho-fonte) {
+@mixin font-title {
     font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 600;
     color: map-get($colors, textos-Gerais);
-    font-size: $tamanho-fonte;
 }
 
 @mixin span {
