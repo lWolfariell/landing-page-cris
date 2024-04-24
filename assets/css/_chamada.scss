@@ -1,0 +1,29 @@
+.chamada {
+    background: url('../img/bg-chamada.jpg') center top/cover no-repeat local;
+    height: 500px;
+
+    .background {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: rgba(map-get($colors, rosa_Pastel_Terciario), 0.7);
+        height: 100%;
+        justify-content: space-around;
+        padding: 1rem;
+
+
+        .definicoes {
+            @include span;
+            border-bottom: 1px solid;
+            line-height: 55px;
+        }
+
+        .titles {
+            @include font-sub-title(1.5rem);
+            text-align: center;
+        }      
+
+
+    }
+
+}

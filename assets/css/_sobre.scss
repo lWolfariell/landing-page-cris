@@ -1,0 +1,43 @@
+.sobre {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+    .sobre-cris {
+        @include span;
+    }
+
+    .borda-imagem {
+        width: 200px;
+        /* Largura do contêiner */
+        height: 200px;
+        /* Altura do contêiner */
+        border-radius: 50%;
+        /* Transforma o contêiner em um círculo */
+        overflow: hidden;
+        /* Oculta qualquer parte da imagem que ultrapasse os limites do contêiner */
+
+        img {
+            width: 100%;
+            /* Garante que a imagem preencha todo o contêiner */
+            height: 100%;
+            /* Garante que a imagem preencha todo o contêiner */
+            object-fit: cover;
+            /* Faz com que a imagem preencha o contêiner sem distorção */
+
+        }
+    }
+
+    .frase-intro {
+        @include font-sub-title(33px);
+    }
+
+
+    .list-pontos-fortes {
+        li {
+            @include list-style
+        }
+    }
+}
