@@ -2,6 +2,9 @@
     background-color: map-get($colors, rosa_Pastel_Terciario);
     padding: 1rem;
 
+    
+    
+
     .titles-beneficios {
         @include font-sub-title(1.5rem);
         text-align: center;
@@ -9,13 +12,19 @@
         letter-spacing: 5px;
     }
 
-    ul {
+    .list {
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
 
     li {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+        width: 280px;
+        height: 280px;
         border: 2px solid map-get($colors , secundaria_Roxo);
         border-radius: 10px 10px 30px 10px;
         padding: 1rem;
@@ -25,7 +34,30 @@
         &:hover {
             background-color: map-get($colors, rosa_Pastel_Primario);
         }
+
+        .circle-icon {
+            background-color: white;
+            border: 2px solid map-get($colors, secundaria_Roxo);
+            align-self: initial;
+            border-radius: 50%;
+            padding: 19px;
+            width: 90px;
+            height: 90px;
+            top: 65%; /* Posiciona o círculo verticalmente no meio */
+            left: 20%;
+            transform: translateY(-80%);/* Corrige o deslocamento vertical */
+        }
+
+        .img{
+            
+        }
+
+        .resumo-beneficio{
+            text-align: center;
+        }
     }
+
+
 
     button {
         width: 10px;
@@ -37,4 +69,14 @@
     }  
 
 
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .beneficios {
+        .list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
 }

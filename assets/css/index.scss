@@ -19,10 +19,24 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     margin-top: 0;
-    margin-bottom: 1rem;
+    line-height: 30px;
   }
 
 strong {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
+}
+
+.redes-sociais{
+  display: flex;
+  gap: 0.5rem;
+
+  .iconContainer{
+      width:20px;
+      
+  }
+
+  .sr-only {
+      display: none;
+  }
 }

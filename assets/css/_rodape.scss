@@ -1,0 +1,16 @@
+.rodape {
+    background-color: #ec75ce;
+
+    display: flex;
+    flex-direction: column;
+
+    .title-logo{
+        @include font-sub-title(22px);
+    }
+
+    .information {
+        background: rgb(200, 23, 184);
+        background: linear-gradient(180deg, rgba(200, 23, 184, 1) 0%, rgba(118, 9, 121, 1) 28%, rgba(0, 212, 255, 0.07324928262320551) 100%);
+    }
+
+}

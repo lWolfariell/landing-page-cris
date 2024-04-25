@@ -2,6 +2,7 @@
 @import './beneficios';
 @import './pack-promocional';
 @import './sobre';
+@import './rodape';
 
 button {
     @include button;
@@ -15,17 +16,7 @@ button {
         background: linear-gradient(147deg, #25cc00 0%, #2c8503 100%);
         color: #2e3740;
         border: solid 2px #586659;
+        
     }
 }
 
-
-
-
-
-.rodape{
-    background-color: #ad0a85;
-
-    .information {
-        background-color: rgba(#9ab0da, 0.5);
-    }
-}
