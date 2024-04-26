@@ -1,23 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cris Saude Bem-Estar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css"> <!-- icones card -->
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css"> <!-- icones card -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <!-- icones lists -->
+
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
-<body onload="renderizarIcones()">
+<body>
     <header class="top-pag">
         <div class="title-logo">
             <h1>Saude e Bem-Estar</h1>
@@ -32,13 +28,13 @@
                 Siga-me:
 
                 <li><a href="#" class="facebook">
-                        <div class="iconContainer"></div><span class="sr-only">Facebook</span>
+                        <i class="fa-brands fa-square-facebook icon-socials"></i><span class="sr-only">Facebook</span>
                     </a></li>
                 <li><a href="#" class="twitter">
-                        <div class="iconContainer"></div><span class="sr-only">Twitter</span>
+                        <i class="fa-brands fa-square-twitter icon-socials"></i><span class="sr-only">Twitter</span>
                     </a></li>
                 <li><a href="#" class="instagram">
-                        <div class="iconContainer"></div><span class="sr-only">Instagram</span>
+                        <i class="fa-brands fa-instagram icon-socials"></i><span class="sr-only">Instagram</span>
                     </a></li>
 
             </ul>
@@ -95,92 +91,123 @@
         <ul class="list">
 
             <li class="list-beneficios">
-                <div class="circle-icon">
-                    <img src="" alt="">
+                <div class="circle-icon"><i class="fa-solid fa-suitcase-medical fa-2xl"></i></div>
+                <div class="info-serv">
+                    <h3>Curativo em Geral</h3>
+                    <p class="resumo-beneficio">Oferecemos cuidado especializado para feridas e curativos, garantindo
+                        uma
+                        recuperação rápida e eficaz.</p>
                 </div>
-                <strong>Curativo em Geral</strong>
-                <p class="resumo-beneficio">Oferecemos cuidado especializado para feridas e curativos, garantindo uma
-                    recuperação rápida e eficaz.</p>
             </li>
+
             <li class="list-beneficios">
                 <div class="circle-icon">
-                    <img src="" alt="">
+                    <i class="fa-solid fa-syringe fa-2xl"></i>
                 </div>
-                <strong>Administração de Medicamentos</strong>
-                <p class="resumo-beneficio">Cuidamos da administração correta de medicamentos, garantindo que você
-                    receba os cuidados necessários.</p>
+                <div class="info-serv">
+                    <h3>Administração de Medicamentos</h3>
+                    <p class="resumo-beneficio">Cuidamos da administração correta de medicamentos, garantindo que você
+                        receba os cuidados necessários.</p>
+                </div>
             </li>
+
             <li class="list-beneficios">
                 <div class="circle-icon">
-                    <img src="" alt="">
+                    <i class="fa-solid fa-brain fa-2xl"></i>
                 </div>
-                <strong>Estimulação Cognitiva</strong>
-                <p class="resumo-beneficio">Oferecemos atividades e exercícios para manter a sua mente ativa e
-                    saudável.</p>
+                <div class="info-serv">
+                    <h3>Estimulação Cognitiva</h3>
+                    <p class="resumo-beneficio">Oferecemos atividades e exercícios para manter a sua mente ativa e
+                        saudável.</p>
+                </div>
             </li>
+
             <li class="list-beneficios">
                 <div class="circle-icon">
-                    <img src="" alt="">
+                    <i class="fa-solid fa-hospital fa-2xl"></i>
                 </div>
-                <strong>Acompanhamento de Exames e Consultas</strong>
-                <p class="resumo-beneficio">Auxiliamos em todo o processo, desde o agendamento até o acompanhamento
-                    de exames e consultas médicas.</p>
+                <div class="info-serv">
+                    <h3>Acompanhamento de Exames e Consultas</h3>
+                    <p class="resumo-beneficio">Auxiliamos em todo o processo, desde o agendamento até o acompanhamento
+                        de exames e consultas médicas.</p>
+                </div>
             </li>
+
             <li class="list-beneficios">
                 <div class="circle-icon">
-                    <img src="" alt="">
+                    <i class="fa-solid fa-hands-bubbles fa-2xl"></i>
                 </div>
-                <strong>Higiene</strong>
-                <p class="resumo-beneficio">Cuidamos da sua higiene pessoal para garantir o seu conforto e
-                    bem-estar</p>
+                <div class="info-serv">
+                    <h3>Higiene</h3>
+                    <p class="resumo-beneficio">Cuidamos da sua higiene pessoal para garantir o seu conforto e
+                        bem-estar</p>
+                </div>
             </li>
+
             <li class="list-beneficios">
                 <div class="circle-icon">
-                    <img src="" alt="">
+                    <i class="fa-solid fa-mobile-screen fa-2xl"></i>
                 </div>
-                <strong>Teleconsultas</strong>
-                <p class="resumo-beneficio">Oferecemos consultas médicas virtuais para uma avaliação rápida e
-                    conveniente.</p>
+                <div class="info-serv">
+                    <h3>Teleconsultas</h3>
+                    <p class="resumo-beneficio">Oferecemos consultas médicas virtuais para uma avaliação rápida e
+                        conveniente.</p>
+                </div>
             </li>
+
             <li class="list-beneficios">
                 <div class="circle-icon">
-                    <img src="" alt="">
+                    <i class="fa-solid fa-user-doctor fa-2xl"></i>
                 </div>
-                <strong>Exame Físico</strong>
-                <p class="resumo-beneficio">Realizamos exames físicos completos para monitorar a sua saúde e
-                    bem-estar.</p>
+                <div class="info-serv">
+                    <h3>Exame Físico</h3>
+                    <p class="resumo-beneficio">Realizamos exames físicos completos para monitorar a sua saúde e
+                        bem-estar.</p>
+                </div>
             </li>
+
             <li class="list-beneficios">
                 <div class="circle-icon">
-                    <img src="" alt="">
+                    <i class="fa-solid fa-spa fa-2xl"></i>
                 </div>
-                <strong>Massagem Relaxante e Drenagem Linfática</strong>
-                <p class="resumo-beneficio">Proporcionamos momentos de relaxamento e alívio do estresse através de
-                    massagens terapêuticas.</p>
+                <div class="info-serv">
+                    <h3>Massagem Relaxante e Drenagem Linfática</h3>
+                    <p class="resumo-beneficio">Proporcionamos momentos de relaxamento e alívio do estresse através de
+                        massagens terapêuticas.</p>
+                </div>
             </li>
+
             <li class="list-beneficios">
                 <div class="circle-icon">
-                    <img src="" alt="">
+
                 </div>
-                <strong>Spa dos Pés e Limpeza de Pele</strong>
-                <p class="resumo-beneficio">Mime-se com tratamentos de spa para os pés e limpeza facial para uma
-                    sensação de renovação e revitalização.</p>
+                <div class="info-serv">
+                    <h3>Spa dos Pés e Limpeza de Pele</h3>
+                    <p class="resumo-beneficio">Mime-se com tratamentos de spa para os pés e limpeza facial para uma
+                        sensação de renovação e revitalização.</p>
+                </div>
             </li>
+
             <li class="list-beneficios">
                 <div class="circle-icon">
-                    <img src="" alt="">
+                    <i class="fa-solid fa-dumbbell fa-2xl"></i>
                 </div>
-                <strong>Terapia Ocupacional</strong>
-                <p class="resumo-beneficio">Desenvolvemos atividades e exercícios personalizados para promover a sua
-                    independência e qualidade de vida.</p>
+                <div class="info-serv">
+                    <h3>Terapia Ocupacional</h3>
+                    <p class="resumo-beneficio">Desenvolvemos atividades e exercícios personalizados para promover a sua
+                        independência e qualidade de vida.</p>
+                </div>
             </li>
+
             <li class="list-beneficios">
                 <div class="circle-icon">
-                    <img src="" alt="">
+                    <i class="fa-solid fa-user-nurse fa-2xl"></i>
                 </div>
-                <strong>Plantão 24 horas</strong>
-                <p class="resumo-beneficio">Estamos disponíveis 24 horas por dia, 7 dias por semana, para garantir
-                    que você receba os cuidados necessários a qualquer momento.</p>
+                <div class="info-serv">
+                    <h3>Plantão 24 horas</h3>
+                    <p class="resumo-beneficio">Estamos disponíveis 24 horas por dia, 7 dias por semana, para garantir
+                        que você receba os cuidados necessários a qualquer momento.</p>
+                </div>
             </li>
         </ul>
     </section>
@@ -188,6 +215,7 @@
     <section class="apresentacao-pack-promocional">
 
         <div class="detalhes-pack">
+            
             <div class="card-container">
 
                 <figure class="img-container">
@@ -313,16 +341,18 @@
 
             <div class="contato">
                 seu contato aqui
-                <ul class="redes-sociais">
+                <ul class="redes-sociais-footer">
                     <li><a href="#" class="facebook">
-                            <div class="iconContainer"></div><span class="sr-only">Facebook</span>
+                            <i class="fa-brands fa-square-facebook icon-socials"></i><span
+                                class="sr-only">Facebook</span>
                         </a></li>
                     <li><a href="#" class="twitter">
-                            <div class="iconContainer"></div><span class="sr-only">Twitter</span>
+                            <i class="fa-brands fa-square-twitter icon-socials"></i><span class="sr-only">Twitter</span>
                         </a></li>
                     <li><a href="#" class="instagram">
-                            <div class="iconContainer"></div><span class="sr-only">Instagram</span>
+                            <i class="fa-brands fa-instagram icon-socials"></i><span class="sr-only">Instagram</span>
                         </a></li>
+
                 </ul>
 
             </div>
@@ -331,7 +361,6 @@
 
     </footer>
 
-    <script src="./assets/js/app.js"></script>
 
 
 </body>
