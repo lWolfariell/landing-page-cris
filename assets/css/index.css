@@ -43,6 +43,7 @@
     grid-area: 1/2/2/3;
     padding: 1rem 0 1rem 1rem;
     font-size: 15px;
+    justify-content: center;
   }
   .top-pag .menu {
     grid-area: 2/2/3/3;
@@ -146,40 +147,46 @@
   gap: 1rem;
 }
 .beneficios li {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 280px;
-  height: 280px;
+  margin-top: 70px;
   border: 2px solid #8775c9;
-  border-radius: 10px 10px 30px 10px;
-  padding: 1rem;
   background-color: #EBCBC2;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px 10px 30px 10px;
+  text-align: center;
+  position: relative;
 }
 .beneficios li:hover {
   background-color: #E7C3BA;
 }
 .beneficios li .circle-icon {
-  background-color: white;
-  border: 2px solid #8775c9;
-  align-self: initial;
-  border-radius: 50%;
-  padding: 19px;
   width: 90px;
   height: 90px;
-  top: 65%; /* Posiciona o círculo verticalmente no meio */
-  left: 20%;
-  transform: translateY(-80%); /* Corrige o deslocamento vertical */
+  border-radius: 50%;
+  background-color: #EBCBC2;
+  position: absolute;
+  top: -45px;
+  /* Metade da altura da div circle */
+  left: 50%;
+  /* Centralizar horizontalmente */
+  transform: translateX(-50%);
+  /* Ajustar para centralizar corretamente */
+  box-shadow: -3px -3px 0px 5px rgb(61, 50, 105);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.beneficios li .resumo-beneficio {
-  text-align: center;
+.beneficios li .circle-icon i {
+  color: #8775c9;
+}
+.beneficios li .info-serv {
+  margin-top: 40px;
 }
 .beneficios button {
   width: 10px;
 }
-.beneficios strong {
+.beneficios h3 {
   font-family: "Alex Brush", cursive;
   color: #3b302d;
   font-size: 25px;
@@ -385,6 +392,9 @@ strong {
 .redes-sociais {
   display: flex;
   gap: 0.5rem;
+}
+.redes-sociais i {
+  color: #EFD3CB;
 }
 .redes-sociais .iconContainer {
   width: 20px;

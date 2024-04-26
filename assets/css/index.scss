@@ -31,6 +31,10 @@ strong {
   display: flex;
   gap: 0.5rem;
 
+  i{
+    color: map-get($colors, rosa_Pastel_Terciario);
+  }
+
   .iconContainer{
       width:20px;
       
@@ -40,3 +44,4 @@ strong {
       display: none;
   }
 }
+

@@ -2,8 +2,8 @@
     background-color: map-get($colors, rosa_Pastel_Terciario);
     padding: 1rem;
 
-    
-    
+
+
 
     .titles-beneficios {
         @include font-sub-title(1.5rem);
@@ -19,42 +19,50 @@
     }
 
     li {
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;        
-        width: 280px;
-        height: 280px;
+        margin-top: 70px;
         border: 2px solid map-get($colors , secundaria_Roxo);
-        border-radius: 10px 10px 30px 10px;
-        padding: 1rem;
         background-color: map-get($colors, rosa_Pastel_Secundario);
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 300px;
+        border-radius: 10px;
+        padding: 10px 10px 30px 10px;
+        text-align: center;
+        position: relative;
 
         &:hover {
             background-color: map-get($colors, rosa_Pastel_Primario);
         }
 
         .circle-icon {
-            background-color: white;
-            border: 2px solid map-get($colors, secundaria_Roxo);
-            align-self: initial;
-            border-radius: 50%;
-            padding: 19px;
             width: 90px;
             height: 90px;
-            top: 65%; /* Posiciona o círculo verticalmente no meio */
-            left: 20%;
-            transform: translateY(-80%);/* Corrige o deslocamento vertical */
+            border-radius: 50%;
+            background-color: map-get($colors, rosa_Pastel_Secundario);
+            position: absolute;
+            top: -45px;
+            /* Metade da altura da div circle */
+            left: 50%;
+            /* Centralizar horizontalmente */
+            transform: translateX(-50%);
+            /* Ajustar para centralizar corretamente */
+            -webkit-box-shadow: -3px -3px 0px 5px rgba(61, 50, 105, 1);
+            -moz-box-shadow: -3px -3px 0px 5px rgba(61, 50, 105, 1);
+            box-shadow: -3px -3px 0px 5px rgba(61, 50, 105, 1);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i{
+                color: map-get($colors , secundaria_Roxo);
+            }
         }
 
-        .img{
-            
+        .info-serv {
+            margin-top: 40px;
         }
 
-        .resumo-beneficio{
-            text-align: center;
-        }
+
     }
 
 
@@ -63,13 +71,14 @@
         width: 10px;
     }
 
-    strong {
+    h3 {
         @include font-sub-title(25px);
-        letter-spacing:3px;
-    }  
+        letter-spacing: 3px;
+    }
 
 
 }
+
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     .beneficios {
