@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cris Saude Bem-Estar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css"> <!-- icones card -->
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css"> <!-- icones card -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <!-- icones lists -->
+
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
@@ -20,46 +16,70 @@
 <body>
     <header class="top-pag">
         <div class="title-logo">
-            <p>Saude e Bem-Estar</p>
+            <h1>Saude e Bem-Estar</h1>
         </div>
 
         <div class="contato-container">
             <div class="tel-email">
-                <p>(11) 9999 - 9999</p>
-                <p>yourEmail@email.com.br</p>
+                <p>(11) 9999 - 9999 | yourEmail@email.com.br</p>
             </div>
 
-            <ul class="redes-contato">
+            <ul class="redes-sociais">
                 Siga-me:
-                <li>Rede Social1</li>
-                <li>Rede Social2</li>
-                <li>Rede Social3</li>
+
+                <li><a href="#" class="facebook">
+                        <i class="fa-brands fa-square-facebook icon-socials"></i><span class="sr-only">Facebook</span>
+                    </a></li>
+                <li><a href="#" class="twitter">
+                        <i class="fa-brands fa-square-twitter icon-socials"></i><span class="sr-only">Twitter</span>
+                    </a></li>
+                <li><a href="#" class="instagram">
+                        <i class="fa-brands fa-instagram icon-socials"></i><span class="sr-only">Instagram</span>
+                    </a></li>
+
             </ul>
         </div>
 
-        <div class="menu-nav" style="display: none;">
-            <nav>
-                <ul>
-                    <li>teste</li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#pack">Oferta Especial</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+
     </header>
 
     <section class="chamada">
+
         <div class="background">
 
-            <div class="texts">
+            <div class="div-chamada">
+
                 <span class="definicoes">Definições</span>
-                <h1 class="titles">Texto Chamada para entrar em contato</h1>
-                <h4 class="texts">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ut, porro maxime
-                    itaque
-                    veniam impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quibusdam iure illo
-                    adipisci provident alias?</h4>
+
+                <div class="texts">
+
+                    <h2 class="titles">Cuidado Personalizado no Conforto do seu Lar</h2>
+                    <p>Priorizamos o seu <strong>bem-estar</strong> e <strong>conforto</strong>. Com nosso
+                        serviço de <strong>home-care</strong>, proporcionamos cuidados de saúde e assistência
+                        personalizada
+                        diretamente no seu lar. <strong>Nosso objetivo é criar um ambiente seguro e acolhedor,
+                            assegurando
+                            que suas necessidades de saúde sejam atendidas da melhor maneira possível.</strong></p>
+                </div>
+                <div class="botoes">
+                    <button type="whatsApps Chamada"><img src="./assets/img/whatsapp.png" alt="whatsApp">Entre Agora em
+                        Contato!</button>
+                    <button type="whatsApps Chamada"><img src="./assets/img/whatsapp.png" alt="whatsApp">Saiba
+                        Mais</button>
+                </div>
             </div>
 
-            <button type="whatsApps Chamada"><img src="./assets/img/whatsapp.png" alt="whatsApp">Entre Agora em
-                Contato!</button>
+            <div class="border"></div>
+
+
         </div>
 
     </section>
@@ -69,46 +89,140 @@
         <h2 class="titles-beneficios">Beneficios dos atendimentos</h2>
 
         <ul class="list">
-            <li class="list-beneficios"><strong>Meditar Regularmente</strong><button class="btn-expandir">></button>
-                <span class="resumo-beneficio">A meditação pode ajudar a reduzir o estresse, melhorar a clareza mental e
-                    promover um maior senso de bem-estar emocional.</span>
+
+            <li class="list-beneficios">
+                <div class="circle-icon"><i class="fa-solid fa-suitcase-medical fa-2xl"></i></div>
+                <div class="info-serv">
+                    <h3>Curativo em Geral</h3>
+                    <p class="resumo-beneficio">Oferecemos cuidado especializado para feridas e curativos, garantindo
+                        uma
+                        recuperação rápida e eficaz.</p>
+                </div>
             </li>
-            <li class="list-beneficios"><strong>Exercícios Físicos</strong><button class="btn-expandir">></button>
-                <span class="resumo-beneficio">Praticar atividades físicas regularmente não só melhora a saúde física,
-                    mas também ajuda a manter um estado mental equilibrado, aumentando os níveis de energia e reduzindo
-                    os sintomas de ansiedade e depressão.</span>
+
+            <li class="list-beneficios">
+                <div class="circle-icon">
+                    <i class="fa-solid fa-syringe fa-2xl"></i>
+                </div>
+                <div class="info-serv">
+                    <h3>Administração de Medicamentos</h3>
+                    <p class="resumo-beneficio">Cuidamos da administração correta de medicamentos, garantindo que você
+                        receba os cuidados necessários.</p>
+                </div>
             </li>
-            <li class="list-beneficios"><strong>Cultivar Relacionamentos Significativos</strong><button
-                    class="btn-expandir">></button>
-                <span class="resumo-beneficio">Ter conexões fortes com amigos, familiares e comunidade pode proporcionar
-                    suporte emocional, compartilhamento de experiências e uma sensação de pertencimento, o que contribui
-                    para a felicidade e a saúde mental.</span>
+
+            <li class="list-beneficios">
+                <div class="circle-icon">
+                    <i class="fa-solid fa-brain fa-2xl"></i>
+                </div>
+                <div class="info-serv">
+                    <h3>Estimulação Cognitiva</h3>
+                    <p class="resumo-beneficio">Oferecemos atividades e exercícios para manter a sua mente ativa e
+                        saudável.</p>
+                </div>
             </li>
-            <li class="list-beneficios"><strong>Aprender Constantemente</strong><button class="btn-expandir">></button>
-                <span class="resumo-beneficio">Estar aberto ao aprendizado contínuo pode expandir seus horizontes,
-                    estimular o crescimento pessoal e profissional, e manter sua mente ativa e envolvida com o mundo ao
-                    seu redor.</span>
+
+            <li class="list-beneficios">
+                <div class="circle-icon">
+                    <i class="fa-solid fa-hospital fa-2xl"></i>
+                </div>
+                <div class="info-serv">
+                    <h3>Acompanhamento de Exames e Consultas</h3>
+                    <p class="resumo-beneficio">Auxiliamos em todo o processo, desde o agendamento até o acompanhamento
+                        de exames e consultas médicas.</p>
+                </div>
             </li>
-            <li class="list-beneficios"><strong>Praticar Gratidão</strong><button class="btn-expandir">></button>
-                <span class="resumo-beneficio">Cultivar um mindset de gratidão pode melhorar sua perspectiva sobre a
-                    vida, promover emoções positivas e aumentar sua resiliência diante dos desafios, ajudando-o a
-                    encontrar felicidade nas pequenas coisas do dia a dia.</span>
+
+            <li class="list-beneficios">
+                <div class="circle-icon">
+                    <i class="fa-solid fa-hands-bubbles fa-2xl"></i>
+                </div>
+                <div class="info-serv">
+                    <h3>Higiene</h3>
+                    <p class="resumo-beneficio">Cuidamos da sua higiene pessoal para garantir o seu conforto e
+                        bem-estar</p>
+                </div>
+            </li>
+
+            <li class="list-beneficios">
+                <div class="circle-icon">
+                    <i class="fa-solid fa-mobile-screen fa-2xl"></i>
+                </div>
+                <div class="info-serv">
+                    <h3>Teleconsultas</h3>
+                    <p class="resumo-beneficio">Oferecemos consultas médicas virtuais para uma avaliação rápida e
+                        conveniente.</p>
+                </div>
+            </li>
+
+            <li class="list-beneficios">
+                <div class="circle-icon">
+                    <i class="fa-solid fa-user-doctor fa-2xl"></i>
+                </div>
+                <div class="info-serv">
+                    <h3>Exame Físico</h3>
+                    <p class="resumo-beneficio">Realizamos exames físicos completos para monitorar a sua saúde e
+                        bem-estar.</p>
+                </div>
+            </li>
+
+            <li class="list-beneficios">
+                <div class="circle-icon">
+                    <i class="fa-solid fa-spa fa-2xl"></i>
+                </div>
+                <div class="info-serv">
+                    <h3>Massagem Relaxante e Drenagem Linfática</h3>
+                    <p class="resumo-beneficio">Proporcionamos momentos de relaxamento e alívio do estresse através de
+                        massagens terapêuticas.</p>
+                </div>
+            </li>
+
+            <li class="list-beneficios">
+                <div class="circle-icon">
+
+                </div>
+                <div class="info-serv">
+                    <h3>Spa dos Pés e Limpeza de Pele</h3>
+                    <p class="resumo-beneficio">Mime-se com tratamentos de spa para os pés e limpeza facial para uma
+                        sensação de renovação e revitalização.</p>
+                </div>
+            </li>
+
+            <li class="list-beneficios">
+                <div class="circle-icon">
+                    <i class="fa-solid fa-dumbbell fa-2xl"></i>
+                </div>
+                <div class="info-serv">
+                    <h3>Terapia Ocupacional</h3>
+                    <p class="resumo-beneficio">Desenvolvemos atividades e exercícios personalizados para promover a sua
+                        independência e qualidade de vida.</p>
+                </div>
+            </li>
+
+            <li class="list-beneficios">
+                <div class="circle-icon">
+                    <i class="fa-solid fa-user-nurse fa-2xl"></i>
+                </div>
+                <div class="info-serv">
+                    <h3>Plantão 24 horas</h3>
+                    <p class="resumo-beneficio">Estamos disponíveis 24 horas por dia, 7 dias por semana, para garantir
+                        que você receba os cuidados necessários a qualquer momento.</p>
+                </div>
             </li>
         </ul>
     </section>
 
     <section class="apresentacao-pack-promocional">
 
-
-
         <div class="detalhes-pack">
+            
             <div class="card-container">
 
                 <figure class="img-container">
                     <div class="card-overlay"></div> <!-- Rosa sobreposto -->
                     <img src="./assets/img/2150780444.jpg" alt="" class="imgPack"></img>
                     <div class="circle-valor">
-                        <span class="valor-pack">R$ 45,00</span>
+                        <span class="valor-pack">R$ 199,00</span>
                     </div>
 
                 </figure>
@@ -131,6 +245,7 @@
                 <button class="whatsApp Pack">Entre Agora em Contato!</button>
 
             </div>
+
         </div>
 
         <div class="detalhes-pack">
@@ -163,7 +278,10 @@
                 <button class="whatsApp Pack">Entre Agora em Contato!</button>
 
             </div>
+
         </div>
+
+
 
 
 
@@ -206,27 +324,43 @@
 
     <footer class="rodape">
 
-        <section class="information">
+        <div class="information">
             <h2 class="title-info">Sua frase aqui</h2>
             <button type="whatsApps footer">Entre Agora em Contato!</button>
-        </section>
+        </div>
 
-        <section class="mais-detalhes">
+        <div class="mais-detalhes">
+
             <div class="sobre-cris">
                 <figure>
                     <img src="" alt="" class="logo">
-                    <p>Saude e Bem-Estar</p>
+                    <p class="title-logo">Saude e Bem-Estar</p>
                 </figure>
                 <p>Breve texto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, pariatur?</p>
             </div>
+
             <div class="contato">
                 seu contato aqui
-                <a href="http://">redes-sociais</a>
-                <a href="http://">redes-sociais</a>
-                <a href="http://">redes-sociais</a>
+                <ul class="redes-sociais-footer">
+                    <li><a href="#" class="facebook">
+                            <i class="fa-brands fa-square-facebook icon-socials"></i><span
+                                class="sr-only">Facebook</span>
+                        </a></li>
+                    <li><a href="#" class="twitter">
+                            <i class="fa-brands fa-square-twitter icon-socials"></i><span class="sr-only">Twitter</span>
+                        </a></li>
+                    <li><a href="#" class="instagram">
+                            <i class="fa-brands fa-instagram icon-socials"></i><span class="sr-only">Instagram</span>
+                        </a></li>
+
+                </ul>
+
             </div>
-        </section>
+        </div>
+
+
     </footer>
+
 
 
 </body>

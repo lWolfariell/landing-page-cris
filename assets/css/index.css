@@ -1,145 +1,205 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap");
 .top-pag {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr 2fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  height: 10rem;
+  height: 200px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .top-pag .title-logo {
   grid-area: 1/1/3/2;
   background-color: #E7C3BA;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Satisfy", cursive;
   color: #3b302d;
+  font-size: 40px;
 }
 .top-pag .contato-container {
   grid-area: 1/2/3/3;
-  background-color: #BDB2E3;
+  background-color: #8775c9;
+  color: #f1e4e1;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   padding: 10px 10px 5px 30px;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 400;
-  color: #3b302d;
-  font-size: 1rem;
 }
 .top-pag .menu-nav {
   display: none;
 }
 
+/* Estilos para tablets */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  /* Adicione estilos específicos para tablets aqui */
+  .body {
+    width: 768px;
+    /* largura fixa para tablets */
+    margin: 0 auto;
+    /* centraliza o conteúdo */
+  }
+  .top-pag .contato-container {
+    grid-area: 1/2/2/3;
+    padding: 1rem 0 1rem 1rem;
+    font-size: 15px;
+    justify-content: center;
+  }
+  .top-pag .menu {
+    grid-area: 2/2/3/3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: rgba(239, 211, 203, 0.7137254902);
+    padding: 20px;
+    z-index: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+         user-select: none;
+    box-sizing: border-box;
+  }
+  .top-pag .menu ul {
+    display: flex;
+    gap: 1rem;
+  }
+  .top-pag .menu a {
+    text-decoration: none;
+    color: #8775c9;
+    transition: color 0.3s ease;
+  }
+  .top-pag .menu a:hover {
+    color: #aadeb4;
+  }
+}
 .chamada {
   background: url("../img/bg-chamada.jpg") center top/cover no-repeat local;
-  height: 50vh;
-  overflow: hidden;
 }
 .chamada .background {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   background-color: rgba(239, 211, 203, 0.7);
-  height: 100%;
-  justify-content: space-around;
-  padding: 0 0 1rem 1rem;
+  padding: 1rem;
 }
 .chamada .background .definicoes {
-  color: #BDB2E3;
-  font-size: 15px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #8775c9;
+  font-size: 16px;
+  font-family: "Alex Brush", cursive;
   letter-spacing: 0.6px;
   word-spacing: 2px;
   font-weight: 700;
-  -webkit-text-decoration: rgb(68, 68, 68);
-          text-decoration: rgb(68, 68, 68);
-  font-style: italic;
   font-variant: small-caps;
-  text-shadow: 3px 2px 3px rgba(83, 83, 83, 0.147);
   border-bottom: 1px solid;
   line-height: 55px;
 }
 .chamada .background .titles {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Alex Brush", cursive;
   color: #3b302d;
+  font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 15px;
 }
 .chamada .background .texts {
-  font-family: "IBM Plex Sans", sans-serif;
-  color: #3b302d;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
-
-button {
-  font-family: Bebas Neue;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-size: 15px;
-  color: #ffffff;
-  background: linear-gradient(147deg, #25cc00 0%, #2c8503 100%);
-  padding: 10px 15px;
-  border: solid #325731 2px;
-  box-shadow: rgb(0, 0, 0) 5px 5px 4px -3px;
-  border-radius: 18px;
-  transition: 500ms;
-  transform: translateY(0);
+.chamada .background p {
+  text-indent: 10%;
+}
+.chamada .background .botoes {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  cursor: pointer;
-  text-transform: uppercase;
-  width: 230px;
-  text-shadow: 3px 2px 3px rgba(83, 83, 83, 0.347);
-  box-sizing: content-box;
-}
-button:hover {
-  transition: 500ms;
-  padding: 10px 20px;
-  transform: translateY(0px);
-  background: linear-gradient(147deg, #25cc00 0%, #2c8503 100%);
-  color: #2e3740;
-  border: solid 2px #586659;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .background .div-chamada {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  .background .div-chamada .text .titles {
+    font-family: "Alex Brush", cursive;
+    color: #3b302d;
+    font-size: 100px;
+  }
+  .background .border {
+    border: 1px solid #8775c9;
+    border-radius: 20px;
+    width: 300px;
+    height: 500px;
+  }
+}
 .beneficios {
   background-color: #EFD3CB;
   padding: 1rem;
 }
 .beneficios .titles-beneficios {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Alex Brush", cursive;
   color: #3b302d;
+  font-size: 1.5rem;
   text-align: center;
-  border-bottom: 2px double;
-  margin-bottom: 10px;
+  border-bottom: 2px solid;
+  letter-spacing: 5px;
 }
-.beneficios ul {
+.beneficios .list {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 .beneficios li {
-  border: 2px solid #BDB2E3;
-  border-radius: 10px 10px 30px 10px;
-  padding: 1rem;
+  margin-top: 70px;
+  border: 2px solid #8775c9;
   background-color: #EBCBC2;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px 10px 30px 10px;
+  text-align: center;
+  position: relative;
 }
 .beneficios li:hover {
   background-color: #E7C3BA;
 }
+.beneficios li .circle-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #EBCBC2;
+  position: absolute;
+  top: -45px;
+  /* Metade da altura da div circle */
+  left: 50%;
+  /* Centralizar horizontalmente */
+  transform: translateX(-50%);
+  /* Ajustar para centralizar corretamente */
+  box-shadow: -3px -3px 0px 5px rgb(61, 50, 105);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.beneficios li .circle-icon i {
+  color: #8775c9;
+}
+.beneficios li .info-serv {
+  margin-top: 40px;
+}
 .beneficios button {
   width: 10px;
 }
-.beneficios strong {
-  font-family: "IBM Plex Sans", sans-serif;
+.beneficios h3 {
+  font-family: "Alex Brush", cursive;
   color: #3b302d;
-}
-.beneficios span {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 400;
-  color: #3b302d;
-  font-size: 1rem;
+  font-size: 25px;
+  letter-spacing: 3px;
 }
 
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .beneficios .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 .apresentacao-pack-promocional {
   background-color: #EFD3CB;
   display: flex;
@@ -152,7 +212,7 @@ button:hover {
   margin: 20px;
   display: flex;
   flex-direction: column;
-  border: 1px solid #BDB2E3;
+  border: 1px solid #8775c9;
   align-items: center;
   gap: 1rem;
 }
@@ -178,29 +238,35 @@ button:hover {
 }
 .apresentacao-pack-promocional .detalhes-pack .circle-valor {
   background-color: #EFD3CB;
-  border: 2px solid #BDB2E3;
-  border-radius: 50px;
+  border: 2px solid #8775c9;
+  border-radius: 50%;
   position: absolute;
   text-align: center;
-  padding: 18px;
-  width: 34px;
-  top: 100%;
-  /* Posiciona o círculo verticalmente no meio */
-  left: 38%;
-  transform: translateY(-50%);
-  /* Corrige o deslocamento vertical */
+  padding: 19px;
+  width: 50px;
+  top: 100%; /* Posiciona o círculo verticalmente no meio */
+  left: 36%;
+  transform: translateY(-50%); /* Corrige o deslocamento vertical */
+  font-size: 1rem;
+  font-weight: 500;
+}
+.apresentacao-pack-promocional .detalhes-pack .title-pack {
+  font-family: "Alex Brush", cursive;
+  color: #3b302d;
+  font-size: 30px;
 }
 .apresentacao-pack-promocional .detalhes-pack .list-pack li {
   display: flex;
   align-items: center;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.apresentacao-pack-promocional .detalhes-pack .list-pack li .material-symbols-outlined {
+  color: #9287b9;
+  margin-right: 5px;
 }
 .apresentacao-pack-promocional .detalhes-pack .whatsApp.Pack {
   margin-bottom: 30px;
-}
-
-.material-symbols-outlined {
-  color: #9287b9;
-  margin-right: 5px;
 }
 
 .sobre {
@@ -211,17 +277,13 @@ button:hover {
   justify-content: center;
 }
 .sobre .sobre-cris {
-  color: #BDB2E3;
-  font-size: 15px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #8775c9;
+  font-size: 16px;
+  font-family: "Alex Brush", cursive;
   letter-spacing: 0.6px;
   word-spacing: 2px;
   font-weight: 700;
-  -webkit-text-decoration: rgb(68, 68, 68);
-          text-decoration: rgb(68, 68, 68);
-  font-style: italic;
   font-variant: small-caps;
-  text-shadow: 3px 2px 3px rgba(83, 83, 83, 0.147);
 }
 .sobre .borda-imagem {
   width: 200px;
@@ -234,54 +296,109 @@ button:hover {
   /* Oculta qualquer parte da imagem que ultrapasse os limites do contêiner */
 }
 .sobre .borda-imagem img {
-  width: 100%; /* Garante que a imagem preencha todo o contêiner */
-  height: 100%; /* Garante que a imagem preencha todo o contêiner */
+  width: 100%;
+  /* Garante que a imagem preencha todo o contêiner */
+  height: 100%;
+  /* Garante que a imagem preencha todo o contêiner */
   -o-object-fit: cover;
-     object-fit: cover; /* Faz com que a imagem preencha o contêiner sem distorção */
+     object-fit: cover;
+  /* Faz com que a imagem preencha o contêiner sem distorção */
 }
 .sobre .frase-intro {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Alex Brush", cursive;
   color: #3b302d;
-}
-.sobre .resume {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 400;
-  color: #3b302d;
-  font-size: 1rem;
-  font-size: 1rem;
-  text-indent: 50px;
-  line-height: 1.5em;
+  font-size: 33px;
 }
 .sobre .list-pontos-fortes li {
   display: flex;
   align-items: center;
-  font-size: 1rem;
-  margin-bottom: 10px;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.sobre .list-pontos-fortes li .material-symbols-outlined {
+  color: #9287b9;
+  margin-right: 5px;
 }
 
 .rodape {
-  background-color: #ad0a85;
+  background-color: #ec75ce;
+  display: flex;
+  flex-direction: column;
+}
+.rodape .title-logo {
+  font-family: "Alex Brush", cursive;
+  color: #3b302d;
+  font-size: 22px;
 }
 .rodape .information {
-  background-color: rgba(154, 176, 218, 0.5);
+  background: rgb(200, 23, 184);
+  background: linear-gradient(180deg, rgb(200, 23, 184) 0%, rgb(118, 9, 121) 28%, rgba(0, 212, 255, 0.0732492826) 100%);
 }
 
-h1 {
-  font-size: 40px;
+button {
+  font-family: Bebas Neue;
   font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 13px;
+  color: #ffffff;
+  background: linear-gradient(147deg, #25cc00 0%, #2c8503 100%);
+  padding: 10px 15px;
+  border: solid #325731 2px;
+  box-shadow: rgb(0, 0, 0) 5px 5px 4px -3px;
+  border-radius: 18px;
+  transition: 500ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 170px;
+  text-shadow: 3px 2px 3px rgba(83, 83, 83, 0.347);
+  box-sizing: content-box;
+}
+button:hover {
+  transition: 500ms;
+  padding: 10px 20px;
+  transform: translateY(0px);
+  background: linear-gradient(147deg, #25cc00 0%, #2c8503 100%);
+  color: #2e3740;
+  border: solid 2px #586659;
 }
 
-h2 {
-  font-size: 33px;
-  font-weight: 600;
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #3b302d;
 }
 
-h3 {
-  font-size: 23px;
-  font-weight: 400;
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 0;
+  line-height: 30px;
 }
 
 strong {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 0.5rem;
+}
+.redes-sociais i {
+  color: #EFD3CB;
+}
+.redes-sociais .iconContainer {
+  width: 20px;
+}
+.redes-sociais .sr-only {
+  display: none;
 }/*# sourceMappingURL=index.css.map */

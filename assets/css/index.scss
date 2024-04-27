@@ -3,22 +3,45 @@
 @import './main';
 
 
-h1 {
- font-size: 40px;
- font-weight: 700;
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: map-get($colors, textos-Gerais );
+  }
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
-h2 {
-    font-size: 33px;
-    font-weight: 600;
-}
-
-h3 {
-    font-size: 23px;
-    font-weight: 400;
-}
+p {
+    margin-top: 0;
+    line-height: 30px;
+  }
 
 strong {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: bold;
 }
+
+.redes-sociais{
+  display: flex;
+  gap: 0.5rem;
+
+  i{
+    color: map-get($colors, rosa_Pastel_Terciario);
+  }
+
+  .iconContainer{
+      width:20px;
+      
+  }
+
+  .sr-only {
+      display: none;
+  }
+}
+
