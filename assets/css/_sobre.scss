@@ -41,3 +41,24 @@
         }
     }
 }
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .sobre {
+
+        .section-details {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+
+            .borda-imagem{
+                width: 13rem;
+                position: absolute;
+            }
+
+            .text-overlay {
+                position: relative;
+               
+            }
+        }
+    }
+}

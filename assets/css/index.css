@@ -269,6 +269,16 @@
   margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .apresentacao-pack-promocional {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .apresentacao-pack-promocional .list-pack {
+    padding: 10px;
+  }
+}
 .sobre {
   padding: 1rem;
   display: flex;
@@ -320,6 +330,20 @@
   margin-right: 5px;
 }
 
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .sobre .section-details {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+  .sobre .section-details .borda-imagem {
+    width: 13rem;
+    position: absolute;
+  }
+  .sobre .section-details .text-overlay {
+    position: relative;
+  }
+}
 .rodape {
   background-color: #ec75ce;
   display: flex;
