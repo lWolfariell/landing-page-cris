@@ -6,7 +6,7 @@
 
 
     .titles-beneficios {
-        @include font-sub-title(1.5rem);
+        @include font-sub-title(2.5rem);
         text-align: center;
         border-bottom: 2px solid;
         letter-spacing: 5px;
@@ -81,6 +81,16 @@
 
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .beneficios {
+        .list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
     .beneficios {
         .list {
             flex-direction: row;

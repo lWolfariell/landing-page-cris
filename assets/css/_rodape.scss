@@ -4,13 +4,80 @@
     display: flex;
     flex-direction: column;
 
-    .title-logo{
+    .title-logo {
         @include font-sub-title(22px);
+
     }
 
     .information {
-        background: rgb(200, 23, 184);
-        background: linear-gradient(180deg, rgba(200, 23, 184, 1) 0%, rgba(118, 9, 121, 1) 28%, rgba(0, 212, 255, 0.07324928262320551) 100%);
+        background: url('../img/bg-chamada.jpg') center bottom/contain no-repeat fixed;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+
+        .fundo {
+            background: rgb(200, 23, 184);
+            background: linear-gradient(180deg, rgba(200, 23, 184, 0.9) 0%, rgba(118, 9, 121,0.9) 27%, rgba(0, 212, 255, 0.063) 200%);
+            z-index: 1;
+            position: absolute;
+            width: -webkit-fill-available;
+            height: 100px;            
+        }
+
+        h2, button {
+            z-index: 999;
+        }
+
+        .title-info {
+            color: map-get($colors, secundaria_Verde );
+        }      
+        
+        
+        
+    }
+
+    .mais-detalhes {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        border-bottom: 2px solid map-get($colors, secundaria_Roxo );
+        max-width: 700px;
+        margin-bottom: 1rem;
+        
+
+        .sobre-cris{
+            max-width: 350px;
+        }
+
+        .redes-sociais-footer{
+            display: flex;
+            gap:0.5rem
+
+            
+
+        }
+
+        .redes-sociais-footer i {
+            color: #4e29d6;
+            
+        }
+    }
+
+    .dev{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+            
+
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .centraliza {
+        display: flex;
+        justify-content: center; 
     }
 
 }

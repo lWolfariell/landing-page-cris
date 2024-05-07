@@ -48,15 +48,17 @@
             text-align: center;
             padding: 19px;
             width: 50px;
-            top: 100%; /* Posiciona o círculo verticalmente no meio */
+            top: 100%;
+            /* Posiciona o círculo verticalmente no meio */
             left: 36%;
-            transform: translateY(-50%);/* Corrige o deslocamento vertical */
+            transform: translateY(-50%);
+            /* Corrige o deslocamento vertical */
             font-size: 1rem;
             font-weight: 500;
-            
+
         }
 
-        .title-pack{
+        .title-pack {
             @include font-sub-title(30px);
         }
 
@@ -87,5 +89,70 @@
         }
     }
 
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .apresentacao-pack-promocional {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+
+        .list-pack {
+            padding: 10px;
+        }
+    }
+
+    .apresentacao-pack-promocional {
+        .detalhes-pack {
+            max-width: 700px;
+            .card-container {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 1rem;
+
+            }
+
+            .img-container {
+                border: 1px solid map-get($colors, secundaria_Roxo);
+                overflow: visible;
+                border-radius: 150px;
+                width: 35%;
+                height: 400px;
+                padding: 15px;
+
+                .card-overlay {
+                    background-color: rgba(231, 195, 186, 0.0);
+                }
+
+                img {
+                    width: 100%;
+                    border-radius: 150px;
+                }
+
+                .circle-valor {
+                    top: 50%;
+                    left: 84%;
+                    padding: 5px;
+                    width: 60px;
+                    height: 65px;
+                    align-content: center;
+                }
+            }
+
+            .infos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                padding: 1rem;
+
+                h3 {
+                    border-bottom: 1px solid map-get($colors, secundaria_Roxo);
+                }
+            }
+        }
+    }
 
 }

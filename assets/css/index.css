@@ -44,6 +44,7 @@
     padding: 1rem 0 1rem 1rem;
     font-size: 15px;
     justify-content: center;
+    align-items: center;
   }
   .top-pag .menu {
     grid-area: 2/2/3/3;
@@ -57,6 +58,47 @@
     -moz-user-select: none;
          user-select: none;
     box-sizing: border-box;
+  }
+  .top-pag .menu ul {
+    display: flex;
+    gap: 1rem;
+  }
+  .top-pag .menu a {
+    text-decoration: none;
+    color: #8775c9;
+    transition: color 0.3s ease;
+  }
+  .top-pag .menu a:hover {
+    color: #aadeb4;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .body {
+    width: 768px;
+    /* largura fixa para tablets */
+    margin: 0 auto;
+    /* centraliza o conteúdo */
+  }
+  .top-pag .contato-container {
+    grid-area: 1/2/2/3;
+    padding: 1rem 0 1rem 1rem;
+    font-size: 20px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .top-pag .menu {
+    grid-area: 2/2/3/3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: rgba(239, 211, 203, 0.7137254902);
+    padding: 20px;
+    z-index: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+         user-select: none;
+    box-sizing: border-box;
+    font-size: 25px;
   }
   .top-pag .menu ul {
     display: flex;
@@ -129,6 +171,31 @@
     height: 500px;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .background .div-chamada {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  .background .div-chamada .titles {
+    font-family: "Alex Brush", cursive;
+    color: #3b302d;
+    font-size: 4.5rem;
+  }
+  .background .border {
+    border: 1px solid #8775c9;
+    border-radius: 20px;
+    width: 300px;
+    height: 500px;
+  }
+  .background .texts p {
+    font-size: 20px;
+  }
+  .background .botoes {
+    justify-content: space-evenly;
+    gap: 1px;
+  }
+}
 .beneficios {
   background-color: #EFD3CB;
   padding: 1rem;
@@ -136,7 +203,7 @@
 .beneficios .titles-beneficios {
   font-family: "Alex Brush", cursive;
   color: #3b302d;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-align: center;
   border-bottom: 2px solid;
   letter-spacing: 5px;
@@ -200,6 +267,13 @@
     justify-content: space-around;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .beneficios .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 .apresentacao-pack-promocional {
   background-color: #EFD3CB;
   display: flex;
@@ -244,9 +318,11 @@
   text-align: center;
   padding: 19px;
   width: 50px;
-  top: 100%; /* Posiciona o círculo verticalmente no meio */
+  top: 100%;
+  /* Posiciona o círculo verticalmente no meio */
   left: 36%;
-  transform: translateY(-50%); /* Corrige o deslocamento vertical */
+  transform: translateY(-50%);
+  /* Corrige o deslocamento vertical */
   font-size: 1rem;
   font-weight: 500;
 }
@@ -277,6 +353,58 @@
   }
   .apresentacao-pack-promocional .list-pack {
     padding: 10px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .apresentacao-pack-promocional {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .apresentacao-pack-promocional .list-pack {
+    padding: 10px;
+  }
+  .apresentacao-pack-promocional .detalhes-pack {
+    max-width: 700px;
+  }
+  .apresentacao-pack-promocional .detalhes-pack .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .apresentacao-pack-promocional .detalhes-pack .img-container {
+    border: 1px solid #8775c9;
+    overflow: visible;
+    border-radius: 150px;
+    width: 35%;
+    height: 400px;
+    padding: 15px;
+  }
+  .apresentacao-pack-promocional .detalhes-pack .img-container .card-overlay {
+    background-color: rgba(231, 195, 186, 0);
+  }
+  .apresentacao-pack-promocional .detalhes-pack .img-container img {
+    width: 100%;
+    border-radius: 150px;
+  }
+  .apresentacao-pack-promocional .detalhes-pack .img-container .circle-valor {
+    top: 50%;
+    left: 84%;
+    padding: 5px;
+    width: 60px;
+    height: 65px;
+    align-content: center;
+  }
+  .apresentacao-pack-promocional .detalhes-pack .infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .apresentacao-pack-promocional .detalhes-pack .infos h3 {
+    border-bottom: 1px solid #8775c9;
   }
 }
 .sobre {
@@ -338,10 +466,20 @@
   }
   .sobre .section-details .borda-imagem {
     width: 13rem;
-    position: absolute;
+    height: 350px;
+    border-radius: 66px;
+    box-shadow: 6px 6px 14px 0px rgba(0, 0, 0, 0.65);
   }
   .sobre .section-details .text-overlay {
-    position: relative;
+    max-width: 550px;
+    margin-right: 10px;
+  }
+  .sobre .list-pontos-fortes {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }
 .rodape {
@@ -355,10 +493,57 @@
   font-size: 22px;
 }
 .rodape .information {
+  background: url("../img/bg-chamada.jpg") center bottom/contain no-repeat fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+.rodape .information .fundo {
   background: rgb(200, 23, 184);
-  background: linear-gradient(180deg, rgb(200, 23, 184) 0%, rgb(118, 9, 121) 28%, rgba(0, 212, 255, 0.0732492826) 100%);
+  background: linear-gradient(180deg, rgba(200, 23, 184, 0.9) 0%, rgba(118, 9, 121, 0.9) 27%, rgba(0, 212, 255, 0.063) 200%);
+  z-index: 1;
+  position: absolute;
+  width: -webkit-fill-available;
+  height: 100px;
+}
+.rodape .information h2, .rodape .information button {
+  z-index: 999;
+}
+.rodape .information .title-info {
+  color: #AADEB4;
+}
+.rodape .mais-detalhes {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #8775c9;
+  max-width: 700px;
+  margin-bottom: 1rem;
+}
+.rodape .mais-detalhes .sobre-cris {
+  max-width: 350px;
+}
+.rodape .mais-detalhes .redes-sociais-footer {
+  display: flex;
+  gap: 0.5rem;
+}
+.rodape .mais-detalhes .redes-sociais-footer i {
+  color: #4e29d6;
+}
+.rodape .dev {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .centraliza {
+    display: flex;
+    justify-content: center;
+  }
+}
 button {
   font-family: Bebas Neue;
   font-weight: 700;
@@ -409,7 +594,7 @@ p {
 }
 
 strong {
-  font-size: 15px;
+  font-size: 1em;
   font-weight: bold;
 }
 

@@ -44,21 +44,38 @@
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     .sobre {
-
         .section-details {
             display: flex;
             flex-direction: row-reverse;
             flex-wrap: wrap;
 
-            .borda-imagem{
+            .borda-imagem {
                 width: 13rem;
-                position: absolute;
+                height: 350px;
+                border-radius: 66px;
+                -webkit-box-shadow: 6px 6px 14px 0px rgba(0, 0, 0, 0.65);
+                -moz-box-shadow: 6px 6px 14px 0px rgba(0, 0, 0, 0.65);
+                box-shadow: 6px 6px 14px 0px rgba(0, 0, 0, 0.65);
             }
 
             .text-overlay {
-                position: relative;
-               
+                max-width: 550px;
+                margin-right: 10px;
+
             }
+
+
         }
+
+        .list-pontos-fortes {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
     }
+
+
 }
